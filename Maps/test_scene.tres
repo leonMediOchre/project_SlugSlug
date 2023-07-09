@@ -1,0 +1,35 @@
+[gd_resource type="VisualShader" load_steps=3 format=3 uid="uid://dw1xf6goxallr"]
+
+[ext_resource type="Texture2D" uid="uid://ddgi52wiemuh" path="res://Textures/tiny-texture-pack-2/128x128/Elements/Elements_03-128x128.png" id="1_w342h"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_486nw"]
+output_port_for_preview = 0
+texture = ExtResource("1_w342h")
+
+[resource]
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
+
+uniform sampler2D tex_frg_2;
+
+
+
+void fragment() {
+// Texture2D:2
+	vec4 n_out2p0 = texture(tex_frg_2, UV);
+
+
+// Output:0
+	ALBEDO = vec3(n_out2p0.xyz);
+	ALPHA = n_out2p0.x;
+	EMISSION = vec3(n_out2p0.xyz);
+	AO_LIGHT_AFFECT = n_out2p0.x;
+
+
+}
+"
+graph_offset = Vector2(-752.491, 151.25)
+nodes/fragment/0/position = Vector2(400, 460)
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture_486nw")
+nodes/fragment/2/position = Vector2(-80, 480)
+nodes/fragment/connections = PackedInt32Array(2, 0, 0, 0, 2, 0, 0, 1, 2, 0, 0, 5, 2, 0, 0, 7)
