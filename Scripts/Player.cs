@@ -11,7 +11,7 @@ public partial class Player : CharacterBody3D {
     public PackedScene FireProjectile;
 
     // Get the gravity from the project settings to be synced with RigidBody nodes.
-    public float Gravity = 0;//ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
+    public float Gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
     private Vector2 _lookDirection;
 	private Vector2 _moveDirection;
     private Camera3D _camera;
