@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://3bnh1p0aqnxa"]
+
+[ext_resource type="PackedScene" uid="uid://l7jira0r857r" path="res://Maps/test_scene.tscn" id="1_ifm3p"]
+
+[node name="Main" type="Node"]
+
+[node name="TestScene" parent="." instance=ExtResource("1_ifm3p")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

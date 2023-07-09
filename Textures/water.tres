@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bg0jh2gs1d4fc"]
+
+[ext_resource type="Texture2D" uid="uid://uv5on0jui3f3" path="res://Textures/water.png" id="1_uyb8g"]
+
+[resource]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.623529)
+albedo_texture = ExtResource("1_uyb8g")
