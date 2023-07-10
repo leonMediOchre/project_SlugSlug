@@ -1,6 +1,9 @@
 using Godot;
 
 public partial class Player : CharacterBody3D {
+    [Signal]
+    public delegate void InteractEventHandler();
+    
     [Export]
 	public float CameraSensitivity {get; set;} = 1;
     [Export]
@@ -15,6 +18,7 @@ public partial class Player : CharacterBody3D {
     private Vector2 _lookDirection;
 	private Vector2 _moveDirection;
     private Camera3D _camera;
+    private float _targetXRotation;
 
     public override void _Ready() {
         Input.MouseMode = Input.MouseModeEnum.Captured;
@@ -56,8 +60,17 @@ public partial class Player : CharacterBody3D {
             velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
         }
 
+        if (Rotation.X != _targetXRotation) {
+            var targetRotation = new Vector3(_targetXRotation, Rotation.Y, Rotation.Z);
+            Rotation.MoveToward(targetRotation, .25f);
+        }
+
         Velocity = velocity;
         MoveAndSlide();
+    }
+
+    public void SwitchGravity() {
+        _targetXRotation = Rotation.X == 0 ? Mathf.Pi : 0;
     }
 
     private void RotateCamera() {
