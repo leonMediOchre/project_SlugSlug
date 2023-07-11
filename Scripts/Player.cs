@@ -1,11 +1,8 @@
 using Godot;
 
 public partial class Player : CharacterBody3D {
-	[Signal]
-	public delegate void InteractEventHandler();
-	
 	[Export]
-	public float CameraSensitivity {get; set;} = 1;
+	public float CameraSensitivity = 1;
 	[Export]
 	public float Speed = 5.0f;
 	[Export]

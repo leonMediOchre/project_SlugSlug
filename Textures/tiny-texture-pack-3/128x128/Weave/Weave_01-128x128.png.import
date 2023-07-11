@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj8kjlh28p31g"
-path="res://.godot/imported/Weave_01-128x128.png-f3df6322414c15083bfb72dd0337e501.ctex"
+path="res://.godot/imported/Weave_01-128x128.png-2ee7aae7446a481c18ec8d0b99fc1483.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/tiny-texture-pack-3/128x128/Weave/Weave_01-128x128.png"
-dest_files=["res://.godot/imported/Weave_01-128x128.png-f3df6322414c15083bfb72dd0337e501.ctex"]
+source_file="res://textures/tiny-texture-pack-3/128x128/Weave/Weave_01-128x128.png"
+dest_files=["res://.godot/imported/Weave_01-128x128.png-2ee7aae7446a481c18ec8d0b99fc1483.ctex"]
 
 [params]
 

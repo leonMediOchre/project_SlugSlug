@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cprbkuefhepej"
-path="res://.godot/imported/Animal_16-128x128.png-b2c88182fee9744f04f30098ef1d13d3.ctex"
+path="res://.godot/imported/Animal_16-128x128.png-db3a19676fa0ebf37e0feb49e93bc39c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/tiny-texture-pack-3/128x128/Animal/Animal_16-128x128.png"
-dest_files=["res://.godot/imported/Animal_16-128x128.png-b2c88182fee9744f04f30098ef1d13d3.ctex"]
+source_file="res://textures/tiny-texture-pack-3/128x128/Animal/Animal_16-128x128.png"
+dest_files=["res://.godot/imported/Animal_16-128x128.png-db3a19676fa0ebf37e0feb49e93bc39c.ctex"]
 
 [params]
 

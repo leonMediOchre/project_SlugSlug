@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgsk7hjvcssbl"
-path.s3tc="res://.godot/imported/Lever.png-0cb13fcde2670ab7a27c461c69692909.s3tc.ctex"
+path.s3tc="res://.godot/imported/Lever.png-943a271e985e7dfab0fe97e96b077a75.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Lever.png"
-dest_files=["res://.godot/imported/Lever.png-0cb13fcde2670ab7a27c461c69692909.s3tc.ctex"]
+source_file="res://textures/Lever.png"
+dest_files=["res://.godot/imported/Lever.png-943a271e985e7dfab0fe97e96b077a75.s3tc.ctex"]
 
 [params]
 

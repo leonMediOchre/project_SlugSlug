@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgat32ey2rb2l"
-path="res://.godot/imported/Plaster_01-128x128.png-5a4dc8d5b21b0bcc34e61eac5b2bd9ab.ctex"
+path="res://.godot/imported/Plaster_01-128x128.png-997c92e6028e511a43e8456a6ce7961c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/tiny-texture-pack-2/128x128/Plaster/Plaster_01-128x128.png"
-dest_files=["res://.godot/imported/Plaster_01-128x128.png-5a4dc8d5b21b0bcc34e61eac5b2bd9ab.ctex"]
+source_file="res://textures/tiny-texture-pack-2/128x128/Plaster/Plaster_01-128x128.png"
+dest_files=["res://.godot/imported/Plaster_01-128x128.png-997c92e6028e511a43e8456a6ce7961c.ctex"]
 
 [params]
 
