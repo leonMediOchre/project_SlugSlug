@@ -18,10 +18,13 @@ FireProjectile = ExtResource("2_wca78")
 transform = Transform3D(1, 0, 0, 0, 4.33766, 0, 0, 0, 1, 0, 1.19348, 0)
 texture = ExtResource("3_pfq8f")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49649, 0)
 fov = 110.0
 size = 2.0
+
+[node name="RayCast" type="RayCast3D" parent="Camera"]
+target_position = Vector3(0, 0, -2)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

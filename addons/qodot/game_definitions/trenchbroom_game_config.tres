@@ -11,7 +11,7 @@
 [resource]
 script = ExtResource("3_8vw40")
 export_file = false
-trenchbroom_games_folder = "C:/Users/Leons/TrenchBroom/games"
+trenchbroom_games_folder = "C:/Users/ivysl/OneDrive/Desktop/Leon/TrenchBroom/games"
 game_name = "ProjectSlugSlug"
 icon = ExtResource("6_gi6bp")
 fgd_files = Array[Resource]([ExtResource("1_y22p1")])
