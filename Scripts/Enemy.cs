@@ -56,11 +56,11 @@ public partial class Enemy : CharacterBody3D {
 
         float angleToPlayer = Rotation.Y - Vector2.Up.AngleTo(_facingVector);
         if (angleToPlayer > 0)
-            if (angleToPlayer < DEG90) _animationPlayer.Play("front_left");
-            else _animationPlayer.Play("back_right");
+            if (angleToPlayer < DEG90) _animationPlayer.Play("back_right");
+            else _animationPlayer.Play("front_left");
         else if (angleToPlayer < 0)
-            if (angleToPlayer > -DEG90) _animationPlayer.Play("front_right");
-            else _animationPlayer.Play("back_left");
+            if (angleToPlayer > -DEG90) _animationPlayer.Play("back_left");
+            else _animationPlayer.Play("front_right");
     }
 
 }

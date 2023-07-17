@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chweubyk32ryh"
-path="res://.godot/imported/GravityFlipVertical.png-576981b6d667b0b9598867c32e944f0d.ctex"
+path="res://.godot/imported/GravityFlipVertical.png-1871209d77217a413ca5b2147f80340e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/GravityFlipVertical.png"
-dest_files=["res://.godot/imported/GravityFlipVertical.png-576981b6d667b0b9598867c32e944f0d.ctex"]
+source_file="res://Textures/GravityFlipVertical.png"
+dest_files=["res://.godot/imported/GravityFlipVertical.png-1871209d77217a413ca5b2147f80340e.ctex"]
 
 [params]
 

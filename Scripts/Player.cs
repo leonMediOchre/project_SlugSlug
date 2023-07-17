@@ -37,7 +37,7 @@ public partial class Player : CharacterBody3D {
 
 	public override void _PhysicsProcess(double delta) {
 		Vector3 velocity = Velocity;
-
+		
 		GetTree().CallGroup("Enemies", "UpdatePlayerPosition", GlobalPosition);
 
 		// Add the gravity.

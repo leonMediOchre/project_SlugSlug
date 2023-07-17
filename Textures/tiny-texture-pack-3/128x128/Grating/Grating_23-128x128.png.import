@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbmkwsndnpvtm"
-path="res://.godot/imported/Grating_23-128x128.png-a48c3de586b4319c3b81d39ad5409aa5.ctex"
+path="res://.godot/imported/Grating_23-128x128.png-d0f54bdfb23f9fea931e3a4b4ab23663.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tiny-texture-pack-3/128x128/Grating/Grating_23-128x128.png"
-dest_files=["res://.godot/imported/Grating_23-128x128.png-a48c3de586b4319c3b81d39ad5409aa5.ctex"]
+source_file="res://Textures/tiny-texture-pack-3/128x128/Grating/Grating_23-128x128.png"
+dest_files=["res://.godot/imported/Grating_23-128x128.png-d0f54bdfb23f9fea931e3a4b4ab23663.ctex"]
 
 [params]
 

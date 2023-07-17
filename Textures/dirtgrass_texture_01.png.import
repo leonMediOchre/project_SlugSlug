@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2sovci0k6pk1"
-path.s3tc="res://.godot/imported/dirtgrass_texture_01.png-a53c86507f414f265410dfd10f648e3f.s3tc.ctex"
+path.s3tc="res://.godot/imported/dirtgrass_texture_01.png-a6d93a5fca53dec5a5f82aa3bc1801b4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/dirtgrass_texture_01.png"
-dest_files=["res://.godot/imported/dirtgrass_texture_01.png-a53c86507f414f265410dfd10f648e3f.s3tc.ctex"]
+source_file="res://Textures/dirtgrass_texture_01.png"
+dest_files=["res://.godot/imported/dirtgrass_texture_01.png-a6d93a5fca53dec5a5f82aa3bc1801b4.s3tc.ctex"]
 
 [params]
 

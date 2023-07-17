@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3d8cvd4trmty"
-path.s3tc="res://.godot/imported/Tile_19-128x128.png-efb89b526a1f60881e635ce0e2b72dfb.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tile_19-128x128.png-ea8997a77d5446a5cd017058b2c94659.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/tiny-texture-pack/128x128/Tile/Tile_19-128x128.png"
-dest_files=["res://.godot/imported/Tile_19-128x128.png-efb89b526a1f60881e635ce0e2b72dfb.s3tc.ctex"]
+source_file="res://Textures/tiny-texture-pack/128x128/Tile/Tile_19-128x128.png"
+dest_files=["res://.godot/imported/Tile_19-128x128.png-ea8997a77d5446a5cd017058b2c94659.s3tc.ctex"]
 
 [params]
 

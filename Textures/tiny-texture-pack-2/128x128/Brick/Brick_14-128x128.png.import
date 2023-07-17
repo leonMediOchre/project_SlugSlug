@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brs5g6on84qy0"
-path="res://.godot/imported/Brick_14-128x128.png-328d4c7d4a86d9d6bffd9bfb7b0d3063.ctex"
+path="res://.godot/imported/Brick_14-128x128.png-270ccdb9ca5a46e10b9e0e12a8640e84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tiny-texture-pack-2/128x128/Brick/Brick_14-128x128.png"
-dest_files=["res://.godot/imported/Brick_14-128x128.png-328d4c7d4a86d9d6bffd9bfb7b0d3063.ctex"]
+source_file="res://Textures/tiny-texture-pack-2/128x128/Brick/Brick_14-128x128.png"
+dest_files=["res://.godot/imported/Brick_14-128x128.png-270ccdb9ca5a46e10b9e0e12a8640e84.ctex"]
 
 [params]
 

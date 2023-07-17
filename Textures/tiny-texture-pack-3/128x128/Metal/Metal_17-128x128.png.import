@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://650w8ny4c02l"
-path="res://.godot/imported/Metal_17-128x128.png-04aca52b5eda0317d44545928e2d0dee.ctex"
+path="res://.godot/imported/Metal_17-128x128.png-46ccd0e5c9b53d406028f82d6e3c88c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/tiny-texture-pack-3/128x128/Metal/Metal_17-128x128.png"
-dest_files=["res://.godot/imported/Metal_17-128x128.png-04aca52b5eda0317d44545928e2d0dee.ctex"]
+source_file="res://Textures/tiny-texture-pack-3/128x128/Metal/Metal_17-128x128.png"
+dest_files=["res://.godot/imported/Metal_17-128x128.png-46ccd0e5c9b53d406028f82d6e3c88c2.ctex"]
 
 [params]
 
