@@ -45,7 +45,7 @@ public partial class Player : CharacterBody3D {
 			velocity.Y -= Gravity * (float)delta;
 
 		// Handle Jump.
-		if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
+		if (Input.IsActionJustPressed("jump") && IsOnFloor())
 			velocity.Y = JumpVelocity;
 
 		Vector2 inputDir = Input.GetVector(
@@ -54,11 +54,13 @@ public partial class Player : CharacterBody3D {
 			);
 		Vector3 direction = (_camera.Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
 		if (direction != Vector3.Zero) {
-			velocity.X = direction.X * Speed;
-			velocity.Z = direction.Z * Speed;
+			float velDelta = IsOnFloor() ? .25f * Speed : .025f * Speed;
+			velocity.X = Mathf.MoveToward(velocity.X, direction.X * Speed, velDelta);
+			velocity.Z = Mathf.MoveToward(Velocity.Z, direction.Z * Speed, velDelta);
 		} else {
-			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
-			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
+			float velDelta = IsOnFloor() ? Speed : .01f * Speed;
+			velocity.X = Mathf.MoveToward(Velocity.X, 0, velDelta);
+			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, velDelta);
 		}
 
 		if (Rotation.X != _targetXRotation) {
