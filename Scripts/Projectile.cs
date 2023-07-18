@@ -22,7 +22,6 @@ public partial class Projectile : Area3D {
 
 		_initialPosition = GlobalPosition;
         _velocity = -Transform.Basis.Z * Speed;
-		GD.Print("Bullet pos = " + GlobalPosition); 
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
