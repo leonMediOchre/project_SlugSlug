@@ -52,7 +52,7 @@ public partial class Player : CharacterBody3D {
 			"move_left", "move_right",
 			"move_forward", "move_backward"
 			);
-		Vector3 direction = (_camera.Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
+		Vector3 direction = (Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
 		if (direction != Vector3.Zero) {
 			float velDelta = IsOnFloor() ? .25f * Speed : .025f * Speed;
 			velocity.X = Mathf.MoveToward(velocity.X, direction.X * Speed, velDelta);
@@ -82,7 +82,8 @@ public partial class Player : CharacterBody3D {
 			-1.5f, 1.5f
 			);
 		float yRotation = _camera.Rotation.Y -_lookDirection.X * CameraSensitivity;
-		_camera.Rotation = new Vector3(xRotation, yRotation, 0);
+		_camera.Rotation = new Vector3(xRotation, 0, 0);
+		RotateY(yRotation);
 	}
 	
 	private void Fire() {
