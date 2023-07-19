@@ -5,6 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 
 public partial class DialogueBox : Control {
+    private static DialogueBox _instance = new DialogueBox();
     private Node _vBox;
     private static Label _nameLabel;
     private static Label _textLabel;
@@ -33,7 +34,7 @@ public partial class DialogueBox : Control {
         _nameLabel = _vBox.GetNode("NameLabel") as Label;
         _textLabel = _vBox.GetNode("TextPanel/TextLabel") as Label;
 
-        DeserialiseDialogue("Dialogue");
+        InitiateDialogue("Dialogue");
     }
 
     public override void _UnhandledInput(InputEvent @event) {
@@ -41,7 +42,10 @@ public partial class DialogueBox : Control {
             Next();
     }
 
-    public static void DeserialiseDialogue(string dialogueId) {
+    public static void InitiateDialogue(string dialogueId) {
+        _instance.GetTree().Paused = true;
+        _instance.Visible = true;
+        
         String jsonString = File.ReadAllText($"Assets/Dialogue/{dialogueId}.slug");
         _dialogues = JsonSerializer.Deserialize<Dictionary<string, Dialogue>>(jsonString);
 
@@ -56,8 +60,8 @@ public partial class DialogueBox : Control {
         if (_currentDialogue.Lines.Length > ++_lineIndex) {
             _nameLabel.Text = _currentDialogue.Lines[_lineIndex].Character;
             _textLabel.Text = _currentDialogue.Lines[_lineIndex].Text;
-            GetTree().CallGroup("Characters", "GetCharacterPosition", _nameLabel.Text);
-        } else if (_currentDialogue.Options != null)
+            GetTree().CallGroup("Characters", "DrawPlayerFocus", _nameLabel.Text);
+        } else if (_currentDialogue.Options != null) {
             foreach (var option in _currentDialogue.Options) {
                 OptionButton newButton = new(option.ID);
                 newButton.Text = option.Text;
@@ -65,6 +69,10 @@ public partial class DialogueBox : Control {
                 _optionButtons.Add(newButton);
                 _vBox.AddChild(newButton);                           
             }
+        } else {
+            GetTree().Paused = false;
+            _instance.Visible = false;
+        }
     }
 
     private partial class OptionButton : Button {
