@@ -1,0 +1,32 @@
+{
+  "Start": {
+    "Lines": [
+      {
+        "Character": "Slug",
+        "Text": "I am a slug"
+      },
+      {
+        "Character": "Slug",
+        "Text": "I am gay."
+      }
+    ],
+    "Options": [
+      {
+        "ID": "gay",
+        "Text": "Yay"
+      },
+      {
+        "ID": "way",
+        "Text": "No"
+      }
+    ]
+  },
+  "gay": {
+    "Lines": [
+      {
+        "Character": "Slug",
+        "Text": "Wowza"
+      }
+    ]
+  }
+}

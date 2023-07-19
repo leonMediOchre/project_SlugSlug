@@ -175,3 +175,5 @@ shape = SubResource("SphereShape3D_ic2g3")
 libraries = {
 "": SubResource("AnimationLibrary_dl6du")
 }
+
+[node name="Character" type="Node" parent="."]

@@ -76,6 +76,10 @@ public partial class Player : CharacterBody3D {
 		_targetXRotation = Rotation.X == 0 ? Mathf.Pi : 0;
 	}
 
+	public void SetCameraFocus(Vector3 focusPosition) {
+		_camera.LookAt(focusPosition, Vector3.Up);
+	}
+
 	private void RotateCamera() {
 		float xRotation = Mathf.Clamp(
 			_camera.Rotation.X - _lookDirection.Y * CameraSensitivity,
