@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://txsokr6db1is"]
+[gd_scene load_steps=11 format=3 uid="uid://txsokr6db1is"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy.cs" id="1_ilr7y"]
 [ext_resource type="Texture2D" uid="uid://bhysdkfmw287g" path="res://Textures/slug_animationspritesheet.png" id="2_smd2w"]
+[ext_resource type="Script" path="res://Prefabs/Character.cs" id="3_bxihi"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ic2g3"]
 
@@ -176,4 +177,5 @@ libraries = {
 "": SubResource("AnimationLibrary_dl6du")
 }
 
-[node name="Character" type="Node" parent="."]
+[node name="Character" type="Node" parent="." groups=["Characters"]]
+script = ExtResource("3_bxihi")
